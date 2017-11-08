@@ -1,119 +1,52 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <title>{{ page.title }}</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="http://fonts.googleapis.com/css?family=Playball" rel="stylesheet">
-  <link href="/assets/css/jekyllthemes.css" rel="stylesheet" />
-  <link href="/assets/css/syntax.css" rel="stylesheet" />
-</head>
+  <head>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
+    {% include meta.html %}
 
-<body>
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
 
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    ga('create', 'UA-735643-13', 'jekyllthemes.org');
-    ga('send', 'pageview');
-  </script>
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
 
+          <div class="site-info">
+            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+            <p class="site-description">{{ site.description }}</p>
+          </div>
 
-
-  <header id="header">
-    <div class="wrap">
-
-      <h1 id="logo"><a href="/">{{ site.name }}</a></h1>
-
-    </div>
-  </header>
-
-
-
-  <div id="pagecontainer" class="container">
-
-
-
-    <!--<div class="hero-unit">
-      <p><strong>Need a design for your <a href="http://jekyllrb.com/">Jekyll</a> blog?</strong> Whether you're looking for a fresh theme to drop in and go, or to use as a starting point for customization, you'll find the best ones available right here.</p>
-    </div>-->
-
-
-
-    <div class="widebanner row">
-      <div class="span12">
-        <div class="banner72" id="banner72">
-
-          <script type="text/javascript"><!--
-
-            var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-
-            google_ad_client = "ca-pub-7611360452853908";
-
-            if (width > 769) {
-              google_ad_slot = "6552835850";
-              google_ad_width = 728;
-              google_ad_height = 90;
-            } else {
-              var el = document.getElementById("banner72");
-              el.parentNode.removeChild(el);
-            }
-
-            //-->
-          </script>
-          <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-
-        </div>
+          <nav>
+            <a href="{{ site.baseurl }}/">Blog</a>
+            <a href="{{ site.baseurl }}/about">About</a>
+            <a href="{{ site.baseurl }}/prueba">Prueba</a>
+          </nav>
+        </header>
       </div>
     </div>
 
-
-
-    <div id="content">
-
-
-        {{ content }}
-
-
+    <div id="main" role="main" class="container">
+      {{ content }}
     </div>
 
-
-  </div>
-
-
-
-  <footer id="footer">
-    <div class="container">
-      <div class="row">
-
-        <div class="span5 copyright">
-          Copyright &copy; {{ site.time | date: '%Y' }} Matt Harzewski. Powered by <a href="http://jekyllrb.com">Jekyll</a>.
-          <br /><br />
-          <iframe src="http://ghbtns.com/github-btn.html?user=mattvh&repo=jekyllthemes&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="95" height="20"></iframe>
-          <iframe src="http://ghbtns.com/github-btn.html?user=mattvh&repo=jekyllthemes&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
-          <br /><br />
-        </div>
-
-        <div class="span7">
-          <h3>Want to Submit a Theme?</h3>
-          <ul>
-            <li>Fork <a href="https://github.com/mattvh/jekyllthemes" target="_blank">our site</a> on GitHub</li>
-            <li>Create a new post in the <code>_posts</code> directory and fill out the relevant YAML fields</li>
-            <li>Make a 250x200 thumbnail and drop it in the <code>thumbnails</code> directory. List its filename in the post's markdown file.</li>
-            <li>Test it out, then push your changes up and open a pull request.</li>
-          </ul>
-        </div>
-
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          {% include svg-icons.html %}
+        </footer>
       </div>
     </div>
-  </footer>
 
-
-
-</body>
+    {% include analytics.html %}
+  </body>
 </html>
