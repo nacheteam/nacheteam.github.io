@@ -1,8 +1,6 @@
 ---
 layout: post
 title: "¿Quién soy yo?"
-author: Ignacio Aguilera Martos
-date: 8-11-2017
 ---
 
 Soy Ignacio Aguilera Martos, actualmente estudiante de Ingeniería Informática y Matemáticas en la [Universidad de Granada](www.ugr.es).  
