@@ -1,34 +1,21 @@
-# Bef is a responsive jekyll theme
+Jekyll Themes
+=============
 
-Bef - Blog Enjoy Freedom is a responsive jekyll theme which created to be simple and freedom.
+A directory of the best-looking themes for Jekyll blogs
 
-## Demo
 
-Check the theme in action [Demo](https://artemsheludko.github.io/bef/)
+Submitting a Theme
+------------------
 
-The main page would look like this:
+Have a theme you want to share?
 
-![Main page preview](https://github.com/artemsheludko/bef/blob/master/assets/img/bef_main_page.jpg?raw=true)
+* Fork the site on GitHub
+* Create a new post in the `_posts` directory and fill out the relevant YAML fields
+* Make a 250x200 thumbnail and drop it in the thumbnails directory. List its filename in the post's markdown file.
+* Test it out, then push your changes up and open a pull request.
 
-The post page would look like this:
 
-![Post page preview](https://github.com/artemsheludko/bef/blob/master/assets/img/bef_post.jpg?raw=true)
+License
+-------
 
-## Features
-
-- [Google Fonts](https://fonts.google.com/)
-- [Font Awesome](http://fontawesome.io/)
-- [Vide](http://vodkabears.github.io/vide/)
-- [Disqus](https://disqus.com/)
-- [MailChimp](https://mailchimp.com/)
-- [Formspree!](https://formspree.io/)
-- [Analytics](https://analytics.google.com/analytics/web/)
-- Share Buttons, Recent Post, Section Author, Contact and more...
-
-## Installation:
-
-Fork the ``master`` branch and delete ``gh-pages`` branch in it. This is important because ``gh-pages`` branch is used here only to host the blog. You should be using the master branch as the source and create a fresh ``gh-pages`` branch.
-
-### License
-
-GNU General Public License v3.0
+The contents of this repository are licensed under the [GNU Public License.](http://www.gnu.org/licenses/gpl-3.0.html)
