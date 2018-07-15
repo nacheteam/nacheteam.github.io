@@ -28,5 +28,20 @@ body, html {height: 100%}
   </div>
 </div>
 
+<h3>A demonstration of how to access a File Upload Button</h3>
+
+<input type="file" id="myFile">
+
+<p>Click the "Try it" button to disable the file upload button.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myFile");
+    x.disabled = true;
+}
+</script>
+    
 </body>
 </html>
