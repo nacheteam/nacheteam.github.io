@@ -1,219 +1,133 @@
-
-
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>Welcome to Outlier Ensembles’s documentation! &mdash; Outlier Ensembles 5 Sept 2019 documentation</title>
-  
+<html>
+<link rel='shortcut icon' type='image/x-icon' href='https://avatars2.githubusercontent.com/u/16293577?s=460&v=4' />
+<title>Ignacio</title>
+<title>Aguilera Martos</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+<body class="w3-black">
 
-  
-  
-  
-  
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="https://avatars2.githubusercontent.com/u/16293577?s=460&v=4" style="width:100%">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="cv.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-id-card-o w3-xxlarge"></i>
+    <p>CV</p>
+  </a>
+  <a href="https://nacheteam.github.io/Lista-libros/lista_libros.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-book w3-xxlarge"></i>
+    <p>Lista de libros</p>
+  </a>
+</nav>
 
-  
-  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-        <script type="text/javascript" src="_static/jquery.js"></script>
-        <script type="text/javascript" src="_static/underscore.js"></script>
-        <script type="text/javascript" src="_static/doctools.js"></script>
-        <script type="text/javascript" src="_static/language_data.js"></script>
-        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-
-    
-
-  
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Models" href="models.html" /> 
-</head>
-
-<body class="wy-body-for-nav">
-
-   
-  <div class="wy-grid-for-nav">
-    
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
-      <div class="wy-side-scroll">
-        <div class="wy-side-nav-search" >
-          
-
-          
-            <a href="#" class="icon icon-home"> Outlier Ensembles
-          
-
-          
-          </a>
-
-          
-            
-            
-          
-
-          
-<div role="search">
-  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:40% heigth:50% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:40% heigth:50% !important">ABOUT</a>
+    <a href="cv.html" class="w3-bar-item w3-button" style="width:40% heigth:50% !important">CV</a>
+    <a href="https://nacheteam.github.io/Lista-libros/lista_libros.html" class="w3-bar-item w3-button" style="width:40% heigth:50% !important">LISTA DE LIBROS</a>
+  </div>
 </div>
 
-          
-        </div>
+<div class="parallax"></div>
 
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
-              <p class="caption"><span class="caption-text">Documentation</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="models.html">Models</a></li>
-<li class="toctree-l1"><a class="reference internal" href="examples.html">Examples</a></li>
-</ul>
-<p class="caption"><span class="caption-text">Experiments</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="experiments.html">Experiments</a></li>
-</ul>
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo">Ignacio Aguilera<span class="w3-hide-small">Martos</span></h1>
+    <p>Estudiante de Ingeniería informática y Matemáticas.</p>
+    <img src="https://avatars2.githubusercontent.com/u/16293577?s=460&v=4" alt="boy" class="w3-image" width="300" height="300">
+  </header>
 
-            
-          
-        </div>
-      </div>
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="#">Outlier Ensembles</a>
-        
-      </nav>
-
-
-      <div class="wy-nav-content">
-        
-        <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
-  <ul class="wy-breadcrumbs">
-    
-      <li><a href="#">Docs</a> &raquo;</li>
-        
-      <li>Welcome to Outlier Ensembles’s documentation!</li>
-    
-    
-      <li class="wy-breadcrumbs-aside">
-        
-            
-            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
-          
-        
-      </li>
-    
-  </ul>
-
-  
-  <hr/>
-</div>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-           <div itemprop="articleBody">
-            
-  <div class="section" id="welcome-to-outlier-ensembles-s-documentation">
-<h1>Welcome to Outlier Ensembles’s documentation!<a class="headerlink" href="#welcome-to-outlier-ensembles-s-documentation" title="Permalink to this headline">¶</a></h1>
-<div class="toctree-wrapper compound">
-</div>
-<div class="toctree-wrapper compound">
-</div>
-<div class="toctree-wrapper compound">
-</div>
-</div>
-<div class="section" id="content-of-the-documentation">
-<h1>Content of the Documentation<a class="headerlink" href="#content-of-the-documentation" title="Permalink to this headline">¶</a></h1>
-<p>1. In the section “Documentation” the main explanation of the module can be found. In the subsection “Models” the theoretical explanation of each model is given and
-the parameters to fulfill when creating each predictor object. Then some examples are provided in the subsection “Examples”.</p>
-<p>2. In the section “Experiments” you can find the explanation of some experiments and results obtained with the implementation of the models in the package compared
-to some models taken from <a class="reference external" href="https://github.com/yzhao062/pyod">PyOD</a> .</p>
-</div>
-
-
-           </div>
-           
-          </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="models.html" class="btn btn-neutral float-right" title="Models" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-    </div>
-  
-
-  <hr/>
-
-  <div role="contentinfo">
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">¿Quién soy yo?</h2>
+    <hr style="width:200px" class="w3-opacity">
     <p>
-        &copy; Copyright 2019, Ignacio Aguilera Martos
-
+        Soy Ignacio Aguilera Martos, actualmente estudiante de Ingeniería Informática y Matemáticas en la Universidad de Granada. Soy una persona activa en GitHub que le encanta
+        la ciberseguridad y la Inteligencia Artificial.
     </p>
-  </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    <p>
+        En referencia a mi atracción a la seguridad informática formo parte de un grupo local enfocado a la divulgación sobre ciberseguridad y a la concienciación de la gente
+        sobre los peligros que afrontan en Internet. En este grupo he dado una charla sobre  <a href="https://vimeo.com/214392014">Tor</a> y tengo previsto dar otra sobre los
+        <a href="https://www.github.com/nacheteam/charla-ransomware">ransomware</a>. El nombre del grupo es <a href="https://interferencias.github.io">Interferencias</a>.
+    </p>
+    <h3 class="w3-padding-16 w3-text-light-grey">Competencias</h3>
+    <hr style="width:200px" class="w3-opacity">
+    <p class="w3-wide">C++</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:90%"></div>
+    </div>
+    <p class="w3-wide">C</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:70%"></div>
+    </div>
+    <p class="w3-wide">Python</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:65%"></div>
+    </div>
+    <p class="w3-wide">Java</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+    </div>
+    <p class="w3-wide">Cuckoo</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:60%"></div>
+    </div>
+    <h3 class="w3-padding-16 w3-text-light-grey">Idiomas</h3>
+    <hr style="width:200px" class="w3-opacity">
+    <p class="w3-wide">Español</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:100%"></div>
+    </div>
+    <p class="w3-wide">Inglés</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:85%"></div>
+    </div>
+    <p class="w3-wide">Francés</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:35%"></div>
+    </div><br>
 
-</footer>
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <center>
+        <a href="https://www.github.com/nacheteam"><i class="fa fa-github w3-hover-opacity" style="font-size:48px"></i></a>
+        <a href="https://www.linkedin.com/in/ignacio-aguilera-martos-3b4a92122/"><i class="fa fa-linkedin w3-hover-opacity" style="font-size:48px"></i></a>
+        <a href="https://www.ivoox.com/podcast-computinglife_sq_f1362921_1.html"><i class="fa fa-podcast w3-hover-opacity" style="font-size:48px"></i></a>
+        <a href="mailto:nacheteam1996@gmail.com"><i class="fa fa-at" style="font-size:48px"></i></a>
+        <p class="w3-medium">Hecho por <a href="https://www.github.com/nacheteam" target="_blank" class="w3-hover-text-green">mi.</a></p>
+    </center>
+  <!-- End footer -->
+  </footer>
 
-        </div>
-      </div>
-
-    </section>
-
-  </div>
-  
-
-
-  <script type="text/javascript">
-      jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(true);
-      });
-  </script>
-
-  
-  
-    
-   
+<!-- END PAGE CONTENT -->
+</div>
 
 </body>
 </html>
